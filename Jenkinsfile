@@ -3,8 +3,8 @@ pipeline{
     stages{
         stage('Clone')
         {
-            step{
-                git 'https://github.com/NguyenHuuLocGith/fg.git'
+            steps{
+                git branch: 'main', url: 'https://github.com/NguyenHuuLocGith/fg.git'
             }
         }
     }
